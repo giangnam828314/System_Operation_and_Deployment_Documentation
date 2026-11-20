@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#53677f"/></marker></defs>
+<rect width="1600" height="900" fill="#f5f8fc"/>
+<text x="800" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="700" fill="#12345a">MSTAR – KIẾN TRÚC GOOGLE WORKSPACE SSO</text>
+<rect x="90" y="190" width="400" height="345" rx="28" fill="#e7f1ff" stroke="#1d65aa" stroke-width="4"/>
+<rect x="600" y="190" width="400" height="345" rx="28" fill="#fff2e8" stroke="#dc6a35" stroke-width="4"/>
+<rect x="1110" y="190" width="400" height="345" rx="28" fill="#e8f7ef" stroke="#26865a" stroke-width="4"/>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<text x="290" y="260" font-size="30" font-weight="700" fill="#14243a">LỚP 1</text><text x="290" y="320" font-size="32" font-weight="700" fill="#164f86">Google Workspace</text><text x="290" y="390" font-size="23" fill="#14243a">Tài khoản nhân viên</text><text x="290" y="435" font-size="19" fill="#42556d">Email • Hồ sơ • Trạng thái</text>
+<text x="800" y="260" font-size="30" font-weight="700" fill="#14243a">LỚP 2</text><text x="800" y="320" font-size="34" font-weight="700" fill="#a44722">Authentik</text><text x="800" y="390" font-size="23" fill="#14243a">Google OAuth Source</text><text x="800" y="435" font-size="19" fill="#42556d">SSO • Session • MFA</text>
+<text x="1310" y="260" font-size="30" font-weight="700" fill="#14243a">LỚP 3</text><text x="1310" y="320" font-size="32" font-weight="700" fill="#176441">Ứng dụng MSTAR</text><text x="1310" y="385" font-size="23" fill="#14243a">KPI Dashboard</text><text x="1310" y="425" font-size="23" fill="#14243a">NAS • Bitrix24</text><text x="1310" y="465" font-size="19" fill="#42556d">Monitoring • Helpdesk</text>
+</g>
+<path d="M500 360 L580 360" stroke="#53677f" stroke-width="8" marker-end="url(#arr)"/><path d="M1010 360 L1090 360" stroke="#53677f" stroke-width="8" marker-end="url(#arr)"/>
+<g font-family="Arial,sans-serif" text-anchor="middle" font-size="19" fill="#42556d"><text x="545" y="320">OAuth</text><text x="1050" y="320">OIDC / SAML</text></g>
+<rect x="150" y="620" width="1300" height="185" rx="22" fill="#fff" stroke="#d7e0eb" stroke-width="3"/>
+<g font-family="Arial,sans-serif" text-anchor="middle"><text x="800" y="685" font-size="30" font-weight="700" fill="#12345a">NGUYÊN TẮC PHÂN QUYỀN</text><text x="800" y="735" font-size="23" fill="#14243a">Google xác thực danh tính • Authentik cung cấp SSO</text><text x="800" y="775" font-size="19" fill="#42556d">Mỗi ứng dụng tự quản lý quyền nghiệp vụ; không tự cấp Admin qua đăng nhập</text></g>
+</svg>

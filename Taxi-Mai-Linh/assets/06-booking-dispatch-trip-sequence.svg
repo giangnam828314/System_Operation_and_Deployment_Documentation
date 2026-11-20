@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040">
+<defs><style>.t{font:700 28px Arial;fill:#12304a}.s{font:15px Arial;fill:#426078}.h{font:700 17px Arial;fill:#12304a}.b{font:15px Arial;fill:#23445c}.lane{fill:#f7fbff;stroke:#9dbbd0;stroke-width:1.5}.line{stroke:#6a879b;stroke-width:2;stroke-dasharray:7 6}.msg{stroke:#1c729f;stroke-width:2.5;fill:none;marker-end:url(#a)}.ret{stroke:#b47a31;stroke-width:2;stroke-dasharray:6 5;fill:none;marker-end:url(#b)}.note{fill:#fff4e8;stroke:#c47a26;stroke-width:1.5;rx:10}</style><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="#1c729f"/></marker><marker id="b" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L9 3 L0 6" fill="#b47a31"/></marker></defs>
+<rect width="1440" height="1040" fill="#fff"/><text x="55" y="55" class="t">ĐẶT XE → ĐIỀU PHỐI → CHUYẾN ĐI — LUỒNG TUẦN TỰ</text><text x="55" y="84" class="s">Tương tác logic • thời gian đi từ trên xuống • chính sách/ngưỡng ngoại lệ chờ phê duyệt</text>
+<g>
+<rect x="50" y="120" width="190" height="72" class="lane"/><text x="145" y="150" text-anchor="middle" class="h">Khách hàng / Nhân viên</text><text x="145" y="175" text-anchor="middle" class="s">Kênh tiếp nhận</text>
+<rect x="290" y="120" width="190" height="72" class="lane"/><text x="385" y="150" text-anchor="middle" class="h">Đặt xe Service</text>
+<rect x="530" y="120" width="190" height="72" class="lane"/><text x="625" y="150" text-anchor="middle" class="h">Điều phối Engine</text>
+<rect x="770" y="120" width="190" height="72" class="lane"/><text x="865" y="150" text-anchor="middle" class="h">Danh mục nguồn xe</text>
+<rect x="1010" y="120" width="190" height="72" class="lane"/><text x="1105" y="150" text-anchor="middle" class="h">Ứng dụng tài xế</text>
+<rect x="1250" y="120" width="150" height="72" class="lane"/><text x="1325" y="150" text-anchor="middle" class="h">Chuyến đi / Fare</text>
+</g>
+<g class="line"><path d="M145 192 V980"/><path d="M385 192 V980"/><path d="M625 192 V980"/><path d="M865 192 V980"/><path d="M1105 192 V980"/><path d="M1325 192 V980"/></g>
+<g class="msg">
+<path d="M145 235 H385"/><path d="M385 295 H145"/><path d="M385 355 H625"/><path d="M625 415 H865"/><path d="M865 475 H625"/><path d="M625 535 H1105"/><path d="M1105 595 H625"/><path d="M625 655 H385"/><path d="M1105 715 H1325"/><path d="M1325 775 H385"/><path d="M385 835 H145"/>
+</g>
+<g class="b">
+<text x="260" y="225" text-anchor="middle">1. Tạo booking</text><text x="260" y="285" text-anchor="middle">2. Mã tra cứu + trạng thái</text><text x="505" y="345" text-anchor="middle">3. Yêu cầu điều phối</text><text x="745" y="405" text-anchor="middle">4. Tìm nguồn xe đủ điều kiện</text><text x="745" y="465" text-anchor="middle">5. Bản chụp ứng viên</text><text x="865" y="525" text-anchor="middle">6. Gửi lời mời</text><text x="865" y="585" text-anchor="middle">7. Chấp nhận / từ chối</text><text x="505" y="645" text-anchor="middle">8. Ghi nhận phân xe</text><text x="1215" y="705" text-anchor="middle">9. Chuyến đi milestones</text><text x="855" y="765" text-anchor="middle">10. Cước + kết quả chuyến</text><text x="265" y="825" text-anchor="middle">11. Cập nhật khách hàng</text>
+</g>
+<rect x="520" y="865" width="650" height="92" class="note"/><text x="545" y="895" class="h">Chấp nhận nguyên tử / kiểm soát đồng thời</text><text x="545" y="923" class="b">Kiểm tra hạn lời mời + phiên bản booking + điều kiện tài xế/xe;</text><text x="545" y="945" class="b">chỉ một yêu cầu thắng; lệnh trùng trả kết quả ban đầu nhờ khóa chống lặp.</text>
+<rect x="55" y="980" width="1330" height="42" class="lane"/><text x="720" y="1007" text-anchor="middle" class="b">Sau khi hoàn tất: trạng thái thanh toán → ghi sổ cái → đối soát đối tác (nếu có) → kiểm tra và kiểm toán</text>
+</svg>
